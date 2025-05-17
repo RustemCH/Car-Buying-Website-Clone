@@ -1,0 +1,404 @@
+
+body{
+    background-color: #c9b9b900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+
+}
+.input {
+  display: block;
+  margin: 20px auto; /* yatayda ortalar */
+}
+.input {
+  display: block;
+  margin: 20px auto;           /* Yatay ortalama */
+  width: 100%;                 /* Küçük ekranlarda tam genişlik */
+  max-width: 400px;            /* Büyük ekranlarda sınırlı genişlik */
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #7808d0;
+  outline: none;
+}
+
+/* Tablet boyutu için */
+@media (max-width: 768px) {
+  .input {
+    max-width: 90%;
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+}
+
+/* Mobil boyutu için */
+@media (max-width: 480px) {
+  .input {
+    max-width: 95%;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+ .container h3{
+    font-size:26px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+ .container-2 h3{
+    font-size:26px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container p{
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container-2 p{
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 908px) {
+  .menu {
+    display: none; /* Küçük ekranlarda menüyü gizle */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex; /* Menü açıldığında göster */
+  }
+
+  .menu-icon {
+    display: block; /* Üç çizgiyi göster */
+  }
+}
+
+header h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:red;
+    padding: 20px;
+    margin: 0;
+
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+
+}
+
+.nav .btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav .btn:hover {
+  background-color: blueviolet;
+  transform: scale(1.1);
+}
+
+.nav .btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #ff5733;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav .btn:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+header h1{
+    font-size: 60px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header nav li {
+  list-style-type: none;
+  display: inline-block;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 29px;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px; }
+
+header nav li:hover {
+  background-color:white;
+  cursor: pointer;
+  font-size: 33;
+}
+/* From Uiverse.io by cohencoo */ 
+.input {
+  border-radius: 2px;
+  outline:3px solid blueviolet;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 26px;
+  font-weight: 400px;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+
+  transition: 0.25s;
+  margin-bottom: 33px;
+  max-width: 500px;
+  height: 50px;
+  width: 500px;
+}
+
+.input:focus {
+  outline-offset: 5px;
+  background-color: #fff
+}
+
+.container {
+    display: flex;
+    gap: 50px; /* Kartlar arasına boşluk ekler */
+    justify-content: center; /* Ortalar */
+    flex-wrap: wrap; /* Küçük ekranlarda düzgün yerleşim sağlar */
+    margin-bottom: 20px;
+}
+.container .card{
+    background-color: rgb(231, 231, 231);
+}
+.container-2 .card{
+    background-color: rgb(231, 231, 231);
+}
+/* Genel Stil */
+.container, .container-2 {
+    display: flex;
+    flex-wrap: wrap; /* Küçük ekranlar için öğeleri alt satıra geçirir */
+    gap: 20px; /* Kartlar arasında boşluk */
+    justify-content: center; /* Kartları ortalar */
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 30%; /* Büyük ekranlarda 3 araba yan yana */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet görünümü için */
+@media (max-width: 768px) {
+    .card {
+        width: 45%; /* Tabletlerde 2 araba yan yana */
+    }
+}
+
+/* Mobil görünümü için */
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Mobilde 1 araba görünsün */
+    }
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.container-2{
+    display: flex;
+    gap: 20px; /* Kartlar arasına boşluk ekler */
+    justify-content: center; /* Ortalar */
+    flex-wrap: wrap; /* Küçük ekranlarda düzgün yerleşim sağlar */
+}
+
+/* From Uiverse.io by Creatlydev */ 
+.button {
+  font-size: 25px;
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer .contact label{
+    font-size: 49px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer button{
+    font-size: 29px;
+    border-radius: 12px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 33px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contact {
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    height: 50px; /* Genişlik ve yükseklik artırıldı */
+    font-size: 30px; /* Yazı boyutu büyütüldü */
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px; /* Daha büyük mesaj alanı */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:green;
+}
+
+
